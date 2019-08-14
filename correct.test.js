@@ -1,12 +1,9 @@
 const correct = require('./correct');
 
 test('L0ND0N is corrected to LONDON', () => {
-  expect(correct('L0ND0N')).toEqual('LONDON');
+  expect(correct('L0ND0N')).toBe('LONDON');
 });
 
-
-
-// function correct(string) {
-//   return a + b;
-// }
-// module.exports = sum;
+test('DUBL1N is corrected to DUBLIN', () => {
+  expect(correct('DUBL1N')).toBe('DUBLIN');
+});
